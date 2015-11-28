@@ -1,0 +1,39 @@
+#contact{
+    position:absolute;
+    top: 50%;
+    left: 40%;
+}
+.container{
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+#contact a.imgIcon{
+    width: 70px;
+    height: 70px;
+    margin-left: auto;      /* 图片居中*/
+    margin-right:auto;
+    display: block;         /* a只有为block的时候才能设置大小*/
+    border-radius: 100%;
+    background-size: 70% 70%!important;     /* ?不知道为什么这个属性会被覆盖*/
+    background-position: center;            /* 背景图片水平居中*/
+    border: 1px solid gray;                  /* 边框*/
+    box-shadow: 0 0 5px;
+    cursor:pointer;
+}
+#contact a.infoText{
+    position: relative;
+    top: -20px;
+    font-size: 1.7em;
+    color:black;
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+    opacity: 0;
+
+}
+
+
+#qq a{
+
+}

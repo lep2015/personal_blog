@@ -4,8 +4,7 @@
 $(function(){
     $(document).ready(function(){
         $("#fly").hide();
-
-
+        $("#article").load("html/header.html");
 
         /**
          * 菜单栏鼠标滑过
@@ -105,6 +104,10 @@ $(function(){
         $("#tech").click(function(){
             $("#article").empty();
             $("#article").load("html/header.html");
+        });
+        $("#about").click(function(){
+            $("#article").empty();
+            $("#article").load("html/about.html");
         });
     });
 });
