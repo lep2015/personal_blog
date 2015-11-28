@@ -1,0 +1,24 @@
+ .header {
+    margin:100px 0;
+    cursor:pointer;
+}
+ .header  header{
+    float:left;
+    padding-right:50px;
+    width:65%;
+}
+ .header header h1{
+    font-size: 2.5em;
+}
+ .header header p{
+    font-size: 1.7em;
+    line-height: 1.5em;
+    margin: 10px 0 10px;
+}
+ .header header span{
+    color:gray;
+}
+ .header div img{
+    width:200px;
+    border-radius:2px;
+}

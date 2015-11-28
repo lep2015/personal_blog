@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        h1{
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 1.7em;
+            line-height: 1.5em;
+            text-indent: 40px;
+        }
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        a{
+            color: black;
+            text-decoration: none ;
+            border-bottom: 1px dotted gray;
+        }
+    </style>
+</head>
+<body>
+<article id="singular" class="post-1219 post type-post status-publish format-standard has-post-thumbnail hentry category-news" data-post-id="1219">
+    <header>
+        <h1>本博客正式启用 SSL</h1>
+        <!--<span><time datetime="2015 年 11 月 12 日 16:02">三个星期前</time>发布，631 人看过</span>-->
+    </header>
+    <div class="content">
+        <p>SSL（Secure Socket Layer）的主要作用是验证客户端与服务器的有效性，并在数据开始传输前就先进行加密，避免在传输过程中被窃取，同时亦可保证数据的完整性，确保数据在传输过程中不被篡改。以前 SSL 通常都在商业网站的注册、登录和支付页面等涉及机密信息的环节才会见到，但随着互联网的发展，安全性变得越来越重要，国外主流网站几乎都已强制全程启用 SSL 安全连接，Google 也开始根据 SSL 启用与否调整排序权重。</p>
+        <p>而在国内，网络安全环境越来越恶劣，运营商使用各种无耻的技术手段强行在网页中注入广告的行为屡见不鲜。可以说，相信在不久的将来，网址以 HTTPS 开头将成为一大趋势，我也紧跟时代潮流。看见地址栏上的那个小锁头图标了吗？没错，我的博客现在开始启用 SSL，支持全程 HTTPS 协议访问，安全性更好了，逼格也更高了。</p>
+        <img src="https://dn-ssl-dw-blog.qbox.me/files/2015/11/https-lock-in-address-bar.jpg" data-original="https://dn-ssl-dw-blog.qbox.me/files/2015/11/https-lock-in-address-bar.jpg" alt="https-lock-in-address-bar" width="680" height="380" class="aligncenter size-full wp-image-1220" style="opacity: 1; display: block;">
+        <p>要启用 SSL 首先要有浏览器信任的机构颁发的证书，这个证书通常都要花钱买，而且还不便宜。查了一圈，虽然有低价甚至免费的证书可以用，但据说实际用起来小毛病挺多，很麻烦。最后经人推荐，在 namecheap 上买了 <a href="https://www.namecheap.com/security/ssl-certificates/comodo/positivessl-multi-domain.aspx" target="_blank">Comodo PositiveSSL Multi-Domain</a> 证书，一年 $29.88 美元，可用于三个域名，正好可以给我的个人主页、博客和 Camarts 这三个网站都用上，还算实惠。</p>
+        <p>证书到手之后，在服务器上简单配置一下就可以通过 https:// 来访问了，可是我网站上大多数站内链接和资源文件的 URL 都是写死在代码里的，还得手工把它们修改成 HTTPS 的，之后页面才能正常显示。顺便吐槽一下七牛的 CDN，如果想用 HTTPS 访问自定义的域名里资源，就必须用回它自带的 qbox.me 域名，难看不说，数据库里的图片 URL 还都得改，平白增加了不少工作量。</p>
+        <p>折腾一番之后，博客总算是用上了 SSL，我的摄影网站 Camarts 也会在最近几天里完成升级。理论上我的个人主页现在也可以通过 HTTPS 协议访问，但由于优酷的外链播放器不支持 HTTPS，调用演讲视频时会被浏览器视为“不安全内容”屏蔽，查了查似乎暂时没有好的解决方法——国内几大视频网站竟然全都不支持 HTTPS！看来 SSL 在国内的普及还是任重而道远啊。</p>
+        <p>对了，如果你现在还没看到地址栏上的小锁图标，<a href="https://blog.dandyweng.com/2015/11/enabling-ssl-for-my-websites/">可以点击此处手动切换</a>。</p>
+    </div>
+</article>
+</body>
+</html>

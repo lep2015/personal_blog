@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    width:100%;
+    height:100%;
+    /*font-family: SimHei,'Hiragino Sans GB',STHeiti,'Microsoft YaHei','WenQuanYi Micro Hei';*/
+    font-size: 0.7em;
+}
+
+#fly{
+    position:absolute;
+    right:15px;
+    top:50%;
+    cursor: pointer;
+}
+#fly div{
+    width:60px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    background: rgba(31, 145, 214, 0.78);
+    box-shadow: 1px 1px 1px 1px #7D9CDC;
+    opacity: 0;
+}
+
+#rocket{
+    position: fixed;
+    float: right;
+    width:80px;
+    height:80px;
+    background: transparent  url("../images/img_rocket.png") no-repeat;
+    top:50%;
+    right:5px;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#menu{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: #0b0b18;
+}
+#menu div{
+    width: 100%;
+    height: 50px;
+    background: #0a0b11;
+    border-bottom: 1px solid #578e77;
+    text-align: center;
+    cursor: pointer;
+}
+#menu div:hover{
+    background: #57ffbf;
+}
+#menu div span{
+    font-family: SimHei,'Hiragino Sans GB',STHeiti,'Microsoft YaHei','WenQuanYi Micro Hei';
+    font-size: 1.5em;
+    color: #9f9f92;
+    line-height: 50px;
+}
+
+
+#personInfo{
+    position:fixed;
+    margin-left: 60px;
+    width:340px;
+    height:100%;
+    background: url("../images/img_personInfo.jpg") no-repeat;
+    background-attachment: scroll;
+    /*background-position:center;*/
+    /*-webkit-background-size: 100% 100%;*/
+    /*background-size: 100% 100%;*/
+}
+
+#personInfo div {
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(146, 150, 46, 0.3);*/
+}
+
+#personInfo div:first-child {
+    text-align: center;
+}
+#personInfo div:first-child img {
+    margin-top:100px;
+    margin-bottom: 20px;
+    border-radius:100%;
+}
+#personInfo div:first-child h1 {
+    color:#fff;
+
+}
+#personInfo div:first-child h2 {
+    color:#fff;
+}
+
+
+#main{
+    display:inline-block;
+    height:600px;
+    width:66%;
+    margin-left:30%;
+    padding:40px 25px;
+}
+
+#search{
+    float:right;
+
+}
+#search input{
+    width:100px;
+    height:25px;
+    padding-left: 25px;
+    background:url("../images/img_search.png") no-repeat ;
+    background-position-x: 5px;
+    -ms-background-position-y:5px;
+    background-position-y: 5px;
+    -webkit-background-size: 15px 15px;
+    background-size: 15px 15px;
+    border:1px solid #A8A8A8;
+    box-shadow: inset 0px 0px 1px 0px #888888;
+}
+
+#article{
+    margin:50px 40px 30px 20px;
+}
