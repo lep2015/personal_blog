@@ -9,6 +9,7 @@ $(function(){
         $(".header").click(function(){
             $("#article").empty();
             $("#article").load("html/article.html");
+            swicthPage();
         });
     });
 });

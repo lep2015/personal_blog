@@ -1,10 +1,10 @@
 /**
  * Created by lvep on 2015/11/26.
  */
+var isDetail = false;   // 是否为文章具体内容页面
 $(function(){
     $(document).ready(function(){
-        $("#fly").hide();
-        $("#article").load("html/header.html");
+        init();
 
         /**
          * 菜单栏鼠标滑过
@@ -109,5 +109,50 @@ $(function(){
             $("#article").empty();
             $("#article").load("html/about.html");
         });
+
+        /**
+         * 划过回复图标，显示回复内容
+         */
+        $("#comment-img").hover(
+            function(){
+                $(this).hide();
+                $("aside#comment-bar").animate({
+                    right:"0px",
+                    opacity:"1"
+                },500);
+                $("#comment-form").animate({
+                    right:"361px",
+                    opacity:"1"
+                },1000);
+            },
+            function(){
+
+            }
+        );
+        /**
+         * 关闭回复页面
+         */
+        $("#close-button").click(function(){
+            $("#comment-img").show();
+            $("aside#comment-bar").animate({
+                right:"-300px",
+                opacity:"0"
+            },500);
+            $("#comment-form").animate({
+                right:"-361px",
+                opacity:"0"
+            },1000);
+        });
     });
+
+    /**
+     * 初始化
+     */
+    function init(){
+        $("#fly").hide();
+        $("#article").load("html/header.html");
+        hideCommentImg();
+    }
+
+
 });
