@@ -89,7 +89,7 @@ $(function(){
             var scrollHeight = $("body").scrollTop();
             var windowHeight = $(window).height();      // 窗口高度
             // 显示回到顶部按钮
-            if(scrollHeight > windowHeight){
+            if(scrollHeight > windowHeight && !isDetail){
                 $("#fly").show();
             } else {
                 $("#fly").hide();
@@ -108,6 +108,23 @@ $(function(){
         $("#about").click(function(){
             $("#article").empty();
             $("#article").load("html/about.html");
+        });
+        $("#life").click(function(){
+            $("#article").empty();
+            $("#article").load("html/doc.html");
+            $('#temp').load("html/test.html", function(){
+                var mdStr = $('#temp').html();
+
+                var converter = new Showdown.converter();
+                var html = converter.makeHtml(mdStr);
+                //$("#article").html(html);
+                $("#article-detail").html(html)
+                //alert($("#article-detail").html());
+
+            });
+
+
+
         });
 
         /**

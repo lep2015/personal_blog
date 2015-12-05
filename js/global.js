@@ -29,6 +29,8 @@ function showCommentImg(){
 }
 
 function swicthPage(){
+    console.log(isDetail);
+    isDetail = true;
     if(isDetail){
         hideRocket();
         showCommentImg();
@@ -36,5 +38,6 @@ function swicthPage(){
         hideCommentImg();
         showRocket();
     }
-    isDetail = true;
+
+
 }
